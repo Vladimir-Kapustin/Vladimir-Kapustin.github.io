@@ -1,0 +1,7 @@
+.test1 {
+  border: 12px transparent solid;
+
+  &.active {
+    border-color: yellow;
+  }
+}
