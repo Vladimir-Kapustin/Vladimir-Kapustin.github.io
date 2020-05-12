@@ -1,8 +1,0 @@
-.test1 {
-  border: 2px transparent solid;
-}
-
-.test1.active {
-  border-color: yellow;
-}
-/*# sourceMappingURL=main.css.map */
