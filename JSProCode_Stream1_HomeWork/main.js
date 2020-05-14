@@ -10,7 +10,9 @@
 console.log("Домашнее задание. Stream1. Объекты.");
 console.log("");
 
+//создание объектов четырьмя способами (под впечатлением от Флэнагана)
 let articles = [
+  //1-й способ (создание с помощью литерала объекта):
   (article1 = {
     text: "iOS дайджест #37: MVVM + SwiftUI, опыт использования Catalyst",
     author: {
@@ -18,6 +20,7 @@ let articles = [
       isBanned: false,
     },
   }),
+  //2-й способ (с использованием оператора new):
   (article2 = new Object({
     text:
       ".NET дайджест #33: COVID-19 & Visual Studio, .NET 5 preview, ReSharper & Rider release",
@@ -26,6 +29,7 @@ let articles = [
       isBanned: false,
     },
   })),
+  //3-й способ (с помощью Object.create):
   (article3 = Object.create({
     text:
       "Обзор Akka.NET: как проектировать IoT-системы с помощью этой библиотеки",
@@ -34,14 +38,23 @@ let articles = [
       isBanned: true,
     },
   })),
-  (article4 = {
+  //4-й способ (литерал объекта, но без записи его в переменную, которая нафиг не нужна):
+  {
     text:
       "Методи досліджень у дизайні, або Чому варто валідувати ідеї і не зупинятись лише на власному досвіді",
     author: {
       name: "Fedor Fedorov",
       isBanned: false,
     },
-  }),
+  },
+  {
+    text:
+      "Аби щось отримати, треба докласти зусиль — цей принцип справедливий і в IT, і в жонглюванні». Досвід циркового артиста, який став програмістом",
+    author: {
+      name: "Nikolay Nikolayev",
+      isBanned: true,
+    },
+  },
 ];
 
 let str = "";
