@@ -1,0 +1,19 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Neucha&display=swap');
+
+h2, h3 {
+    font-family: 'Neucha', cursive;
+    font-size: xx-large;
+}
+
+p {
+    font-family: 'Marck Script', cursive;
+    font-size: 25px;
+}
+
+a {
+    color: black;
+}
+
+span {
+    color: brown;
+}
