@@ -1,12 +1,25 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Neucha&display=swap');
+﻿@font-face {
+    font-family: neucha;
+    src: url(fonts/Neucha-Regular.ttf);
+}
 
-h2, h3 {
-    font-family: 'Neucha', cursive;
+@font-face {
+    font-family: marckScript;
+    src: url(fonts/MarckScript-Regular.ttf);
+}
+
+h2 {
+    font-family: neucha;
     font-size: xx-large;
 }
 
+h3 {
+    font-family: neucha;
+    font-size: x-large;
+}
+
 p {
-    font-family: 'Marck Script', cursive;
+    font-family: marckScript;
     font-size: 25px;
 }
 
@@ -14,6 +27,22 @@ a {
     color: black;
 }
 
-span {
-    color: brown;
+.inner-text {
+    font-family: marckScript;
+    font-size: 25px;
+    color: black;
+}
+
+span.somecode {
+    font-family: monospace;
+    font-style: normal;
+    font-size: .7em;
+    color: #aa00aa;
+}
+
+li {
+    font-family: marckScript;
+    font-size: 20px;
+    color: #aa00aa;
+    background-color: mediumaquamarine;
 }
