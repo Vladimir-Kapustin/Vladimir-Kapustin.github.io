@@ -8,19 +8,36 @@
     src: url(fonts/MarckScript-Regular.ttf);
 }
 
-h2 {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
     font-family: neucha;
-    font-size: xx-large;
+}
+
+h1 {
+    font-size: 58px;
+    text-align: center;
 }
 
 h3 {
-    font-family: neucha;
     font-size: x-large;
+    text-decoration: underline;
+    padding: 0 0 10px 0;
+    color: #3f3f3f;
+}
+
+h3, p, li  {
+    width: 70%;     /*сделаем текст более читабельным, отцентрируем*/
+    margin: 0 auto;
 }
 
 p {
     font-family: marckScript;
     font-size: 25px;
+    color: #3f3f3f; /*более приятных цвет*/
 }
 
 a {
@@ -41,8 +58,24 @@ span.somecode {
 }
 
 li {
-    font-family: marckScript;
-    font-size: 20px;
-    color: #aa00aa;
-    background-color: mediumaquamarine;
+    font-family: neucha;
+    font-style: italic;
+    font-size: 25px;
+    color: #3f3f3f;
+    text-shadow: -3px -3px 3px #00ff1d, 3px 3px 3px orange;
+    border-radius: 8px;
+    padding: 0 0 5px;
+
+}
+
+li:hover {
+    background-color: lightblue;
+    -moz-transition: .3s linear;
+    -o-transition: .3s linear;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+
+img {
+    padding: 7px 0;
 }
