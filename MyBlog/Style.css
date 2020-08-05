@@ -9,45 +9,78 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    font-family: Arial;
+    width: 70%;     /*сделаем текст более читабельным, отцентрируем*/
+    margin: 0 auto;
+    font-size: 17px;
+    text-align: justify;
+    color: #3f3f3f; /*более приятный цвет*/
+    background: #b29da9;
 }
 
-h1, h2, h3 {
+header {
+    background: #5C2D91;
+    padding: 1px 0 1px 0;
+}
+
+h1, h2 {
     font-family: neucha;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 0;
 }
 
 h1 {
     font-size: 58px;
+}
+
+article>h3 {
+    text-decoration: underline;
+    background-color: #7d81a9;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+nav {
+    float: left;
+    width: 22%;
+    height: auto;
     text-align: center;
 }
 
-h3 {
-    font-size: x-large;
-    text-decoration: underline;
-    padding: 0 0 10px 0;
-    color: #3f3f3f;
+main {
+    float: left;
+    width: 78%;
 }
 
-h2, h3, p, li  {
-    width: 70%;     /*сделаем текст более читабельным, отцентрируем*/
-    margin: 0 auto;
+section {
+    float: left;
+    width: 70%;
 }
 
-p {
-    font-family: Arial;
-    font-size: 20px;
-    color: #3f3f3f; /*более приятный цвет*/
-    text-indent: 30px;
+article {
+    padding: 0 10px;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    height: 757px;
+}
+
+footer {
+    background: #a484b9;
+    float: left;
+    width: 100%;     /*сделаем текст более читабельным, отцентрируем*/
 }
 
 a {
-    color: black;
-}
-
-.inner-text {
-    font-family: marckScript;
-    font-size: 25px;
     color: black;
 }
 
@@ -59,9 +92,6 @@ span.somecode {
 }
 
 li {
-    font-family: neucha;
-    font-style: italic;
-    font-size: 25px;
     color: #3f3f3f;
     text-shadow: -3px -3px 3px #00ff1d, 3px 3px 3px orange;
     border-radius: 8px;
@@ -77,6 +107,6 @@ li:hover {
     transition: .3s linear;
 }
 
-img {
+.pictures {
     padding: 7px 0;
 }
