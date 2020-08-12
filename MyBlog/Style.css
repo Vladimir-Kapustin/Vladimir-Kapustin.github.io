@@ -10,7 +10,7 @@
 
 body {
     font-family: Arial;
-    width: 70%;     /*сделаем текст более читабельным, отцентрируем*/
+    max-width: 990px;     /*сделаем текст более читабельным, отцентрируем*/
     margin: 0 auto;
     font-size: 17px;
     text-align: justify;
@@ -29,6 +29,17 @@ h1, h2 {
     color: white;
     padding: 10px;
     margin: 0;
+}
+
+h2 {
+    position: relative;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -75px;
+    left: -450px;
 }
 
 h1 {
@@ -110,3 +121,16 @@ li:hover {
 .pictures {
     padding: 7px 0;
 }
+
+.footerH3 {
+    display: inline-block;
+    width: 95%;
+    padding-left: 5px;
+}
+
+.devLink {
+    display: inline-block;
+    align-content: flex-end;
+    padding-top: 25px;
+}
+
