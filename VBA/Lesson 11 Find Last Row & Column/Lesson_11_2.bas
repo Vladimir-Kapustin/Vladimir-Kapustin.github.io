@@ -14,8 +14,8 @@ Sub identifyingLastColumn()
 
     Dim lastColumn As Long
     
-    lastColumn = Worksheets(1).Cells(10, Columns.count).End(xlToLeft).Column
-    MsgBox lastColumn
+    lastColumn = Worksheets(1).Cells(2, Columns.count).End(xlToLeft).Column
+    MsgBox lastColumn          'для ячейки С10 можно указать Cells(10, Columns.count)
     
 
 End Sub
@@ -29,17 +29,3 @@ Sub identifyingLastRow_variant2()
 
 End Sub
 
-'Sub identifyingLastColumn_variant2()
-'
-'    Dim lastColumn As Long
-'
-'    lastColumn = Worksheets(1).Range( & "2").End(xlToLeft).Column
-'    MsgBox lastColumn
-'
-'End Sub
-
-Sub checker()
-
-MsgBox ThisWorkbook.Worksheets(1).Columns.count
-
-End Sub
